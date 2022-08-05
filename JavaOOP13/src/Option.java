@@ -37,6 +37,9 @@ public class Option {
                 int expinyear = v.getInt("Enter Year Of Experience: ", 0, 100);
                 String proSkill = v.getString("Enter Professional Skill: ", STRING_PATTERN);
                 list.add(new Experience(id, fullname, birthday, phone, email, type, expinyear, proSkill));
+                break;
+            case 1:
+                String graduation_date=v.getString("Enter Year Of Graduation: ", )
 
         }
     }

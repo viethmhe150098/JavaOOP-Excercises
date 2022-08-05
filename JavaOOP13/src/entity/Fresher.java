@@ -13,6 +13,13 @@ public class Fresher extends Employee{
         this.education = education;
     }
 
+    public Fresher(String ID, String fullname, String birthday, String phone, String email, int employee_type, String graduation_date, int graduation_rank, String education) {
+        super(ID, fullname, birthday, phone, email, employee_type);
+        this.graduation_date = graduation_date;
+        this.graduation_rank = graduation_rank;
+        this.education = education;
+    }
+
     public Fresher(String ID, String fullname, String birthday, String phone, String email, int employee_type, ArrayList<Certificate> list, String graduation_date, int graduation_rank, String education) {
         super(ID, fullname, birthday, phone, email, employee_type, list);
         this.graduation_date = graduation_date;

@@ -1,5 +1,6 @@
 import Entity.CanBo;
 import Entity.Employee;
+import Entity.Engineer;
 import Entity.Worker;
 
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ public class Option {
                 break;
             case 1: //Engineer
                 String specialization = v.getString("Enter Engineer Specialization: ", STRING_PATTERN_ALL);
-                list.add(new Employee(name, age, gender, address, specialization));
+                list.add(new Engineer(name, age, gender, address, specialization));
                 break;
             case 2: //Worker
                 int level = v.getInt("Enter Worker Level", 1, 10);

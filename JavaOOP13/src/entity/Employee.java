@@ -15,6 +15,15 @@ public abstract class Employee {
     public Employee() {
     }
 
+    public Employee(String ID, String fullname, String birthday, String phone, String email, int employee_type) {
+        this.ID = ID;
+        this.fullname = fullname;
+        this.birthday = birthday;
+        this.phone = phone;
+        this.email = email;
+        this.employee_type = employee_type;
+    }
+
     public Employee(String ID, String fullname, String birthday, String phone, String email, int employee_type, ArrayList<Certificate> list) {
         this.ID = ID;
         this.fullname = fullname;

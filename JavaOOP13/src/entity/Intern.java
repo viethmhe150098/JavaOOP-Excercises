@@ -13,6 +13,13 @@ public class Intern extends Employee{
         this.university_name = university_name;
     }
 
+    public Intern(String ID, String fullname, String birthday, String phone, String email, int employee_type, String majors, int semester, String university_name) {
+        super(ID, fullname, birthday, phone, email, employee_type);
+        this.majors = majors;
+        this.semester = semester;
+        this.university_name = university_name;
+    }
+
     public Intern(String ID, String fullname, String birthday, String phone, String email, int employee_type, ArrayList<Certificate> list, String majors, int semester, String university_name) {
         super(ID, fullname, birthday, phone, email, employee_type, list);
         this.majors = majors;
